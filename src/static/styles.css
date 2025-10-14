@@ -104,6 +104,38 @@ section h3 {
   color: #333;
 }
 
+.participant-text {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.15s, transform 0.08s;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+  transform: translateY(-1px);
+}
+
+.participant-delete:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .participants-list li.no-participants {
   color: #777;
   font-style: italic;
